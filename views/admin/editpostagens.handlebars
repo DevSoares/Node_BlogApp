@@ -4,18 +4,19 @@
   </div>
 {{else}}
 {{/each}}
-<h3>Cadastrar postagem</h3><br>
+<h3>Editar postagem</h3><br>
 <div class="card">
   <div class="card-body">
-    <form action="/admin/postagens/nova" method="post">
+    <form action="/admin/postagens/edit" method="post">
+      <input type="hidden" name="id" value="{{postagem._id}}">
       <label for="titulo">Título: </label>
-        <input type="text" name="titulo" class="form-control" required>
+        <input type="text" name="titulo" class="form-control" value="{{postagem.titulo}}" required>
       <label for="slug">Slug: </label>
-        <input type="text" name="slug" class="form-control" required>
+        <input type="text" name="slug" class="form-control" value="{{postagem.slug}}" required>
       <label for="descricao">Descrição: </label>
-        <input type="text" name="descricao" class="form-control" required>
+        <input type="text" name="descricao" class="form-control" value="{{postagem.descricao}}" required>
       <label for="conteudo">Conteúdo: </label>
-        <textarea name="conteudo" class="form-control mt-4" required></textarea>
+        <textarea name="conteudo" class="form-control" required>{{postagem.conteudo}}</textarea>
       <label for="categoria">Categoria: </label>
       <select class="custom-select" name="categoria">
         {{#each categorias}}
@@ -24,7 +25,7 @@
           <option value="0">Nenhuma categoria registrada.</option>
         {{/each}}
       </select>
-      <button type="submit" class="btn btn-success mt-3">Criar postagem</button>
+      <button type="submit" class="btn btn-success mt-3">Editar postagem</button>
     </form>
   </div>
 </div>
