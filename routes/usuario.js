@@ -67,6 +67,12 @@ router.post('/registro', (req,res)=>{
   }
 })
 
+router.get('/logout',(req, res)=>{
+  req.logout()
+  req.flash('success_msg', 'Deslogado com sucesso')
+  res.redirect('/')
+})
+
 router.get('/login', (req,res)=>{
   res.render('usuarios/login')
 })

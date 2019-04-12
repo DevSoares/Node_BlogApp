@@ -1,0 +1,33 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "Projeto para aprender a ferramenta Node de acordo com -> https://www.youtube.com/watch?v=LLqq6FemMNQ&amp;list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.22",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSoares/Node_BlogApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevSoares/Node_BlogApp/issues"
+  },
+  "homepage": "https://github.com/DevSoares/Node_BlogApp#readme",
+  "keywords": []
+}
